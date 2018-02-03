@@ -6,6 +6,7 @@ This project is intended to help read JMdict and EDICT -- online dictionaries fo
 
 ```python
 from reader import japanese as jp
+import json
 
 edict = jp.edict()
 print(json.dumps(edict.getRaw('２０００年問題対応'), indent=4, ensure_ascii=False))
